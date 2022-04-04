@@ -14,7 +14,9 @@ A PDF report containing the full presentation is included in the folder.
 
 ### Question 1
 
-**What would be the cost of a campaign aiming to increase the number of rentals. The campaign consists in a fidelity card that keeps track of every customer rentals and offers a free rental after 10 rentals.**
+**What would be the cost of a campaign aiming to increase the number of rentals?**
+
+The campaign consists in a fidelity card that keeps track of every customer rentals and offers a free rental after 10 rentals.
 
 The result is US$ 4822, calculated as the value of all the free rentals offered over four weeks using an average value equal to the average value of all the rentals in the database.
 
@@ -38,7 +40,7 @@ By Week 5 the generated amount starts decreasing, breaking the previous positive
 
 The total amount corresponding to unpaid rentals is calculated by multiplying the number of unpaid rentals by the average cost of the paid rentals. The graph below shows the number of unpaid rentals and the amount for each of the two employees, and we can see there's not a clear difference between them.
 
-![Unpaid rentals by employee](/images/Q03_graph.JPG)
+![Unpaid rentals by employee](/images/Q03_graph.PNG)
 
 ### Question 4
 
@@ -46,4 +48,4 @@ The total amount corresponding to unpaid rentals is calculated by multiplying th
 
 This is done using NTILE(5) and a sample of the result is shown in the table below.
 
-![Actor classification by generated income](/images/Q04_table.JPG)
+![Actor classification by generated income](/images/Q04_table.PNG)
