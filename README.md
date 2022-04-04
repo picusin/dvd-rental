@@ -1,15 +1,16 @@
 # DVD Rental database analysis
-## by Miguel Orellana
 
 This was the first project from Udacity's Programming for Data Science Nanodegree covering the block on SQL.
 
 The goal of this project is to query the Sakila DVD Rental database, provided by Udacity. This database holds information about a fictional company that rents movie DVDs.
 
-The goal of the project is to query the database to answer four questions chosen by the student and this way gain an understanding of the customer base, such as what the patterns in movie watching are across different customer groups, how they compare on payment earnings, and how the stores compare in their performance. The schema for the DVD Rental database is also provided:
+Students need to answer four questions chosen of their choice and this way gain an understanding of the customer base, such as what the patterns in movie watching are across different customer groups, how they compare on payment earnings, and how the stores compare in their performance. The schema for the DVD Rental database is also provided:
 
 ![DVD Rental ER Diagram](/images/erd.JPG)
 
 All the questions are answered using SQL queries. To create the visualizations in the report, the tables resulting from the queries are imported into Excel.
+
+A PDF report containing the full presentation is included in the folder.
 
 ### Question 1
 
@@ -33,6 +34,16 @@ By Week 5 the generated amount starts decreasing, breaking the previous positive
 
 ### Question 3
 
+**What's the total amount due by customers from unpaid rentals and which employee has a higher amount in debts?**
 
+The total amount corresponding to unpaid rentals is calculated by multiplying the number of unpaid rentals by the average cost of the paid rentals. The graph below shows the number of unpaid rentals and the amount for each of the two employees, and we can see there's not a clear difference between them.
+
+![Unpaid rentals by employee](/images/Q03_graph.JPG)
 
 ### Question 4
+
+**Rank the actors by the income they generate on rentals and assign them a number of stars from 1 to 5 depending on this generated income.**
+
+This is done using NTILE(5) and a sample of the result is shown in the table below.
+
+![Actor classification by generated income](/images/Q04_table.JPG)
